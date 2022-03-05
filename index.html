@@ -8,10 +8,11 @@
 		<title>Бессерверная архитектура</title>
 	</head>
 	<body>
+		<button class="up"><a href="#start"><img src="img/up.png" alt="button up" width="70px"></a></button>
 		<div class="wrapper">
 			<header class="header">
 				<div class="header__container _container">
-					<a href="" class="header__logo">
+					<a href="" class="header__logo" id="start">
 						Бессерверная архитектура
 					</a>
 					<nav class="header__menu menu">
@@ -20,13 +21,13 @@
 								<a href="" class="menu__link"></a>
 							</li>
 							<li class="menu__item">
-								<a href="" class="menu__link">Виды технологий</a>
+								<a href="#more" class="menu__link">Виды технологий</a>
 							</li>
 							<li class="menu__item">
-								<a href="" class="menu__link">Контакты</a>
+								<a href="#clients" class="menu__link">Сервисы</a>
 							</li>
 							<li class="menu__item">
-								<a href="" class="menu__link"></a>
+								<a href="#contacts" class="menu__link">Контакты</a>
 							</li>
 						</ul>
 					</nav>
@@ -41,7 +42,7 @@
 								Просто разверни и запусти
 							</div>
 							<div class="main-block__buttons">
-								<a href="#" class="button">
+								<a href="#more" class="button">
 									<span class="button__text">
 										<span>Узнать больше</span>
 									</span>
@@ -81,7 +82,7 @@
 					</div>
 				</section>
 
-				<section class="page__whoweare whoweare">
+				<section class="page__whoweare whoweare" id="more">
 					<div class="whoweare__container _container">
 						<div class="whoweare__header header-block">
 							<h2 class="header-block__title">Погружение в Serverless</h2>
@@ -205,98 +206,118 @@
 					</div>
 				</section>
 
+				<section class="page__whoweare whoweare">
+					<div class="whoweare__container _container">
+						<div class="whoweare__header header-block">
+							<h2 class="header-block__title">Когда следует избегать бессерверной архитектуры</h2>
+						</div>
+						<div class="whoweare__body">
+							
+							<ol>
+								<li><div class="whoweare__content">
+									<div class="whoweare__top_ol">
+										<h2 class="whoweare__title"><span>Приложения с фиксированной архитектурой. </span></h2>
+										<div class="whoweare__text"> Программное обеспечение, которое требует явной поддержки и неизменности базовой архитектуры. 
+											Сценарии использования чувствительного к безопасности и автономного программного обеспечения в оборонной и финансовой отраслях часто сталкиваются с этими 
+											требованиями, чтобы обеспечить высокую надежность приложений.</div>
+									</div>
+									</div>
+								</li>
+								<li><div class="whoweare__content">
+									<div class="whoweare__top_ol">
+										<h2 class="whoweare__title"><span>Жестко контролируемая среда. </span></h2>
+										<div class="whoweare__text"> Сценарии использования, требующие жесткого контроля над оборудованием и нижними уровнями ИТ-сети, например, установка определенных компонентов, исправлений и изменение конфигурации жесткого кодирования.</div>
+									</div>
+									</div></li>
+								<li><div class="whoweare__content">
+									<div class="whoweare__top_ol">
+										<h2 class="whoweare__title"><span>Приложения с низкой задержкой.  </span></h2>
+										<div class="whoweare__text"> Хотя функции бессерверной архитектуры предназначены для обеспечения скорости 
+											на системном уровне, не все входящие запросы и транзакционные операции обрабатываются эффективно.</div>
+									</div>
+									</div></li>
+									<li><div class="whoweare__content">
+									<div class="whoweare__top_ol">
+										<h2 class="whoweare__title"><span>Приложения с низкой задержкой.  </span></h2>
+										<div class="whoweare__text"> Хотя функции бессерверной архитектуры предназначены для обеспечения скорости 
+											на системном уровне, не все входящие запросы и транзакционные операции обрабатываются эффективно.</div>
+									</div>
+									</div></li>
+								<li><div class="whoweare__content">
+										<div class="whoweare__top_ol">
+											<h2 class="whoweare__title"><span>Предварительно перенесенные приложения.  </span></h2>
+											<div class="whoweare__text"> Для устаревших приложений, которым еще предстоит перейти в облачную среду, использование
+												 бессерверной архитектуры предлагает ограниченную ценность для бизнеса, поскольку внутренняя ИТ-служба должна управлять
+												  оборудованием независимо от выбора архитектуры приложения.</div>
+										</div>
+									</div></li>
+								<li><div class="whoweare__content">
+										<div class="whoweare__top_ol">
+											<h2 class="whoweare__title"><span>Ограничения производительности приложения.  </span></h2>
+											<div class="whoweare__text"> Бессерверные функции сталкиваются с ограничениями с точки зрения емкости, скорости и времени выполнения. 
+												Производительность бессерверных функций должна соответствовать или превышать ограничения емкости бессерверных сервисов, таких как тайм-аут AWS Gateway.</div>
+											</div>
+								</div></li>
+							</ol>
+						</div>
+					</div>
+				</section>
+
 				
 
-				<div class="page__clients clients">
+				<section class="page__subscribe subscribe">
+					<div class="subscribe__container _container">
+						<div class="subscribe__body">
+							<h4 class="subscribe__title">Заключение</h4>
+							<div class="header-block__sub-title-end">
+								Согласно недавнему исследованию, в настоящее время 98 процентов организаций используют облачные сервисы. Это доказывает, что облачная
+								 архитектура - одна из главных особенностей веб-разработки. <br> Бессерверная архитектура предлагает несколько новых функций в процессе развития веб-технологий. 
+								 Теперь люди используют бессерверные вычисления, бессерверные бухгалтерские решения, быстрее и обновляют коэффициент, обеспечивают экономически эффективные решения, обслуживая делегированные проблемы.
+
+								 <br>Благодаря бессерверной архитектуре организации могут понимать SaaS, Laas, PaaS и т. Д. Бессерверная архитектура предлагает веб-приложения без необходимости думать о серверах. 
+								Облачная структура может открываться в любом месте, где есть доступ в Интернет. Даже можно хранить тонны информации без использования выделенных серверов.
+								
+								<br>В нынешней ситуации большинство организаций без колебаний используют эту облачную систему. Он полностью изменил веб-технологии и концепцию реального управления серверами.</p>
+						
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="page__clients clients" id="clients">
 					<div class="clients__container _container">
 						<div class="clients__items">
 							<div class="clients__item">
-								<img src="img/clients/01.png" alt="clients">
+								<a href="https://cloud.yandex.ru/services/functions"><img src="img/clients/yandex.png" alt="yandex cloud"></a>
 							</div>
 							<div class="clients__item">
-								<img src="img/clients/02.png" alt="clients">
+								<a href="https://aws.amazon.com/ru/lambda/"><img src="img/clients/aws.png" alt="aws"></a>
 							</div>
 							<div class="clients__item">
-								<img src="img/clients/03.png" alt="clients">
+								<a href="https://cloud.google.com/functions"><img src="img/clients/google.png" alt="google cloud"></a>
 							</div>
 							<div class="clients__item">
-								<img src="img/clients/04.png" alt="clients">
+								<a href="https://azure.microsoft.com/ru-ru/services/functions/"><img src="img/clients/azure.gif" alt="azure functions"></a>
 							</div>
 							<div class="clients__item">
-								<img src="img/clients/05.png" alt="clients">
-							</div>
-							<div class="clients__item">
-								<img src="img/clients/06.png" alt="clients">
+								<a href="https://fnproject.io/"><img src="img/clients/fn.png" alt="fn oracle"></a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<section class="page__subscribe subscribe">
-					<div class="subscribe__container _container">
-						<div class="subscribe__body">
-							<h4 class="subscribe__title">Subscribe For Latest Newsletter</h4>
-							<form action="#" class="subscribe__form">
-								<input autocomplete="off" type="email" required name="form[]" placeholder="Your Email" class="subscribe__input">
-								<button type="submit" class="subscribe__button">Subscribe</button>
-							</form>
-						</div>
-					</div>
-				</section>
-				<section class="page__getintouch getintouch">
-					<div class="getintouch__container _container">
-						<div class="getintouch__header header-block">
-							<h2 class="header-block__title">Get In Touch</h2>
-							<div class="header-block__sub-title">
-								Problems trying to resolve the conflict between <br> the two major realms of Classical physics: Newtonian mechanics
-							</div>
-						</div>
-						<div class="getintouch__items">
-							<div class="getintouch__item item-getintouch">
-								<div class="item-getintouch__icon">
-									<img src="img/getintouch/01.svg" alt="getintouch">
-								</div>
-								<div class="item-getintouch__emails">
-									<a href="mailto:georgia.young@example.com" class="item-getintouch__email">georgia.young@example.com</a>
-									<a href="mailto:georgia.young@ple.com" class="item-getintouch__email">georgia.young@ple.com</a>
-								</div>
-								<div class="item-getintouch__label">Get Support</div>
-								<a href="" class="item-getintouch__button">Submit Request</a>
-							</div>
-							<div class="getintouch__item item-getintouch item-getintouch_active">
-								<div class="item-getintouch__icon">
-									<img src="img/getintouch/02.svg" alt="getintouch">
-								</div>
-								<div class="item-getintouch__emails">
-									<a href="mailto:georgia.young@example.com" class="item-getintouch__email">georgia.young@example.com</a>
-									<a href="mailto:georgia.young@ple.com" class="item-getintouch__email">georgia.young@ple.com</a>
-								</div>
-								<div class="item-getintouch__label">Get Support</div>
-								<a href="" class="item-getintouch__button">Submit Request</a>
-							</div>
-							<div class="getintouch__item item-getintouch">
-								<div class="item-getintouch__icon">
-									<img src="img/getintouch/03.svg" alt="getintouch">
-								</div>
-								<div class="item-getintouch__emails">
-									<a href="mailto:georgia.young@example.com" class="item-getintouch__email">georgia.young@example.com</a>
-									<a href="mailto:georgia.young@ple.com" class="item-getintouch__email">georgia.young@ple.com</a>
-								</div>
-								<div class="item-getintouch__label">Get Support</div>
-								<a href="" class="item-getintouch__button">Submit Request</a>
-							</div>
-						</div>
-					</div>
-				</section>
 				<section class="page__contact contact">
 					<div class="contact__container _container">
 						<div class="contact__body">
-							<div class="contact__content">
-								<h4 class="contact__title">Consulting Agency For Your Business</h4>
-								<div class="contact__text">the quick fox jumps over the lazy dog</div>
+							
+							<div class="contact__content" id="contacts">
+								<h4 class="contact__title">Быстрая обратная связь</h4>
+								<div class="contact__text">Хочу в Школу Frontend-разработки Digital Design</div>
 							</div>
-							<a href="" class="contact__button">Contact Us</a>
+							<a href="https://api.whatsapp.com/send?phone=79533540075" class="contact__button">Написать мне</a>
 						</div>
 					</div>
+					
+					
 				</section>
 			</main>
 			<footer class="footer">
@@ -304,81 +325,23 @@
 					<div class="footer__main _container">
 						<div class="footer__row">
 							<div class="footer__column">
-								<div class="footer__label">Company Info</div>
 								<nav class="footer__menu menu-footer">
-									<ul class="menu-footer__list">
-										<li class="menu-footer__item"><a href="" class="menu-footer__link">About Us</a></li>
-										<li class="menu-footer__item"><a href="" class="menu-footer__link">Carrier</a></li>
-										<li class="menu-footer__item"><a href="" class="menu-footer__link">We are hiring</a></li>
-										<li class="menu-footer__item"><a href="" class="menu-footer__link">Blog</a></li>
-									</ul>
+									<img src="img/logo-remove.png" alt="logo-fox" width="200px">
 								</nav>
 							</div>
 							<div class="footer__column">
-								<div class="footer__label">Legal</div>
-								<nav class="footer__menu menu-footer">
-									<ul class="menu-footer__list">
-										<li class="menu-footer__item"><a href="" class="menu-footer__link">About Us</a></li>
-										<li class="menu-footer__item"><a href="" class="menu-footer__link">Carrier</a></li>
-										<li class="menu-footer__item"><a href="" class="menu-footer__link">We are hiring</a></li>
-										<li class="menu-footer__item"><a href="" class="menu-footer__link">Blog</a></li>
-									</ul>
-								</nav>
-							</div>
-							<div class="footer__column">
-								<div class="footer__label">Features</div>
-								<nav class="footer__menu menu-footer">
-									<ul class="menu-footer__list">
-										<li class="menu-footer__item"><a href="" class="menu-footer__link">About Us</a></li>
-										<li class="menu-footer__item"><a href="" class="menu-footer__link">Carrier</a></li>
-										<li class="menu-footer__item"><a href="" class="menu-footer__link">We are hiring</a></li>
-										<li class="menu-footer__item"><a href="" class="menu-footer__link">Blog</a></li>
-									</ul>
-								</nav>
-							</div>
-							<div class="footer__column">
-								<div class="footer__label">Resources</div>
-								<nav class="footer__menu menu-footer">
-									<ul class="menu-footer__list">
-										<li class="menu-footer__item"><a href="" class="menu-footer__link">About Us</a></li>
-										<li class="menu-footer__item"><a href="" class="menu-footer__link">Carrier</a></li>
-										<li class="menu-footer__item"><a href="" class="menu-footer__link">We are hiring</a></li>
-										<li class="menu-footer__item"><a href="" class="menu-footer__link">Blog</a></li>
-									</ul>
-								</nav>
-							</div>
-							<div class="footer__column">
-								<div class="footer__label">Get In Touch</div>
+								<div class="footer__label">Мария Набат</div>
 								<div class="footer__contacts contacts-footer">
-									<a href="tel:4805550103" class="contacts-footer__item contacts-footer__item_phone">(480) 555-0103</a>
-									<a href="" class="contacts-footer__item contacts-footer__item_map">4517 Washington Ave. Manchester, Kentucky 39495</a>
-									<a href="mailto:debra.holt@example.com" class="contacts-footer__item contacts-footer__item_email">debra.holt@example.com</a>
+									<a href="tel:79533540075" class="contacts-footer__item contacts-footer__item_phone">+7(953) 354-0075</a>
+									<a href="https://yandex.ru/maps/-/CCUBA-Xx3D" class="contacts-footer__item contacts-footer__item_map">Санкт-Петербург, ул. Орбели</a>
+									<a href="mailto:nukova.maria@mail.ru" class="contacts-footer__item contacts-footer__item_email">nukova.maria@mail.ru</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="footer__bottom">
-					<div class="footer__container _container">
-						<div class="footer__copy">Made With Love By Figmaland All Right Reserved </div>
-						<div class="footer__social social">
-							<a href="" class="social__item">
-								<img src="img/footer/social/01.svg" alt="social">
-							</a>
-							<a href="" class="social__item">
-								<img src="img/footer/social/02.svg" alt="social">
-							</a>
-							<a href="" class="social__item">
-								<img src="img/footer/social/03.svg" alt="social">
-							</a>
-							<a href="" class="social__item">
-								<img src="img/footer/social/04.svg" alt="social">
-							</a>
-						</div>
-					</div>
-				</div>
 			</footer>
 		</div>
-		<script src="js/script.js"></script>
+		<script  src="js/script.js"></script>
 	</body>
 </html>
